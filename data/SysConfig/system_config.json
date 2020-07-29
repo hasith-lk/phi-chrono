@@ -1,0 +1,21 @@
+{
+    "network_id": "SLT-4G-IOT",
+    "network_pwd": "####",
+    "network_attempts": "5",
+    "device_id": "FI-CHRONO-001",
+    "device_key": "6f378a0ffd3cc2fa36bd7f64fa090c340c2a273c",
+    "pin_mapping":[
+        {
+            "pin_id":"14",
+            "port_id":"a"
+        },
+        {
+            "pin_id":"12",
+            "port_id":"b"
+        },
+        {
+            "pin_id":"13",
+            "port_id":"c"
+        }
+    ]
+}

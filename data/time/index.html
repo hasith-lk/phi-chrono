@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
+
+    <script src="timeJS.js"></script>
+    <title>Phichrono Configurator</title>
+  </head>
+ <body>
+
+<div class="container pt-3 my-3">
+  <a class="text-decoration-none" href="../"> 
+    <h1 class="display-5 p-3 bg-secondary text-white">&#9752; Phichrono <small>Watering System</small></h1>
+  </a>
+  
+  <h2 class="d-none d-md-block">Agriculture water supply Management System</h2>
+  <p>Use this page to configure timing</p>
+
+  <div class="btn-group" role="group" aria-label="Port Set" id="portGroup" ></div>
+    <p></p>
+  <div class="btn-group btn-group-toggle pb-2 float-right" data-toggle="buttons" id="portSwitch">
+    <button type="button" class="btn btn-danger btn-rounded btn-switch" value="on" id="btnOn">On</button>
+    <button type="button" class="btn btn-primary btn-rounded btn-switch" value="off" id="btnOn">Off</button>
+  </div>
+
+<p></p>
+<table id="output" class="table table-bordered">
+  <thead>
+    <tr>
+      <th class="d-none">Port_Id</th>
+      <th>Time</th>
+      <th>Duration</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>      
+  </tbody>
+</table>
+
+<div class="btn-group py-3 btn-group-toggle" data-toggle="buttons">
+  <button type="button" class="btn btn-primary btn-rounded btn-sm my-0" alt="New">+</button>
+</div>
+
+<div class="btn-group py-3 btn-group-toggle float-right" data-toggle="buttons">
+  <button type="button" class="btn btn-success btn-rounded btn-sm my-0" id="btnSave" >Save</button>
+  <button type="button" class="btn btn-secondary  btn-success:active btn-rounded btn-sm my-0" id="btnCancel">Cancel</button>
+</div>
+<p></p>
+<div class="text-center small"><!--<input class="form-control" id="debugSpan"></input>-->
+<span >version 1.1</span></div>
+
+<div class="toast" id="success" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000" style="position: relative; min-height: 50px;">
+  <div class="toast-header">Info</div>
+  <div class="toast-body">Saved successfully</div>
+</div>
+<div class="toast" id="failed" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+  <div class="toast-header">Info</div>
+  <div class="toast-body">Save failed</div>
+</div>
+
+</body> 
+</html>

@@ -1,0 +1,17 @@
+{
+    "port_id": "c",
+    "data": [
+        {
+            "time": "08:00",
+            "duration": "5"
+        },
+        {
+            "time": "15:15",
+            "duration": "5"
+        },
+        {
+            "time": "20:00",
+            "duration": "5"
+        }
+    ]
+}
